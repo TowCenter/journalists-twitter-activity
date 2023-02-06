@@ -1,4 +1,4 @@
-## Journalists' Twitter Activity Prior & Post to Elon Musk Buying Twitter
+## journalists-twitter-activity
 
 This project examines U.S. journalists' activity on Twitter in the months before and after Elon Musk bought the social media platform in October 2022. 
 
