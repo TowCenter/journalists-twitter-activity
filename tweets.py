@@ -6,7 +6,7 @@ Base = declarative_base()
 
 class Tweets(Base):
 
-    __tablename__ = 'tweets_combined2'
+    __tablename__ = 'tweets_database'
 
     id = Column(Integer, primary_key=True)
     username = Column(String)
