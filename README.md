@@ -1,4 +1,4 @@
-## Journalists' Twitter Activity Prior & Post Elon Musk 
+## Journalists' Twitter Activity Prior & Post to Elon Musk Buying Twitter
 
 This project examines U.S. journalits activity on Twitter in the months before and after Elon Musk bought the social media platform in October 2022. The Tow Center collected approximately 
 4,000 journalists' twitter handles from both local and national U.S. publications such as the NYT, CNN, Fox News and Breitbart. This code scrapes the daily number 
