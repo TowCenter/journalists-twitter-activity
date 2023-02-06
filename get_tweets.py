@@ -26,23 +26,6 @@ import json
 # Replace your bearer token below
 client = Twarc2(bearer_token="")
 
-
-client = Twarc2(bearer_token='')
-CONFIGDIR = join(abspath(dirname(__file__)), 'config')
-
-DB_CONFIG_FILE = join(CONFIGDIR, 'config.cfg')
-config = Config('config', CONFIGDIR)
-dba = DbAdapter(config.get_property("POSTGRES", "dialect"),
-                                config.get_property("POSTGRES", "driver"),
-                                config.get_property("POSTGRES", "host"),
-                                config.get_property("POSTGRES", "database"),
-                                config.get_property("POSTGRES", "username"),
-                                config.get_property("POSTGRES", "password"))
-
-# read configs
-config = configparser.ConfigParser()
-config.read('config.ini')
-
 tweet_id_cache = Tweets().get_all_tweet_ids(dba)
 
 api_key = config['twitter']['api_key']
@@ -74,6 +57,7 @@ def parse_tweet(tweet):
             }
 
             if d['tweet_id'] not in tweet_id_cache:
+                #insert into database 
                 f = Tweets(**d)
                 f.insert(dba)
 
