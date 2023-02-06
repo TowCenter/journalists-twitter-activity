@@ -79,8 +79,6 @@ def parse_tweet(tweet):
 
 
 for user in df['username']:
-
-
      # Specify the start time in UTC for the time period you want Tweets from
     start_time = datetime.datetime(2022, 6, 1, 0, 0, 0, 0, datetime.timezone.utc)
 
